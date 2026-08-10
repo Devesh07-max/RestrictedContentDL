@@ -41,7 +41,7 @@ class PyroConf(object):
     BOT_START_TIME = time()
 
     MAX_CONCURRENT_DOWNLOADS = int(getenv("MAX_CONCURRENT_DOWNLOADS", "1"))
-    BATCH_SIZE = int(getenv("BATCH_SIZE", "1"))
+    BATCH_SIZE = int(getenv("BATCH_SIZE", "50"))
     FLOOD_WAIT_DELAY = int(getenv("FLOOD_WAIT_DELAY", "10"))
 
-    FORWARD_CHAT_ID = getenv("FORWARD_CHAT_ID", "").strip() or None
+    FORWARD_CHAT_ID = getenv("FORWARD_CHAT_ID", "-1004419031099").strip() or None
